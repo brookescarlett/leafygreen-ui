@@ -1,5 +1,11 @@
 # @leafygreen-ui/palette
 
+## 3.3.0
+
+### Minor Changes
+
+- 3aeee269: test!
+
 ## 3.2.0
 
 ### Minor Changes
