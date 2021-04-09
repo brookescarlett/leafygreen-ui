@@ -31,32 +31,7 @@ function getLodashExternals() {
     .map(fileName => 'lodash/' + fileName.split('.')[0]);
 }
 
-function getDirectGlyphImports() {
-  const glyphsDir = path.resolve(__dirname, './packages/icon/src/glyphs');
-
-  return fs
-    .readdirSync(glyphsDir)
-    .filter(path => /.svg/.test(path))
-    .map(
-      fileName => `@leafygreen-ui/icon/dist/${path.basename(fileName, '.svg')}`,
-    );
-}
-
-function getGeneratedFiles() {
-  const directory = path.resolve(process.cwd(), 'src/generated');
-
-  if (!fs.existsSync(directory)) {
-    return [];
-  }
-
-  return fs
-    .readdirSync(directory)
-    .filter(file => /\.tsx?$/.test(file))
-    .map(file => path.resolve(directory, file));
-}
-
 const allPackages = getAllPackages(path.resolve(__dirname, 'packages'));
-const directGlyphImports = getDirectGlyphImports();
 
 // Mapping of packages to the `window` property they'd be
 // bound to if used in the browser without a module loader.
@@ -82,11 +57,6 @@ const globals = {
 
 allPackages.forEach(packageName => {
   globals[packageName] = packageName;
-});
-
-directGlyphImports.forEach(glyphImport => {
-  // e.g. "@leafygreen-ui/icon/dist/Checkmark" -> "Checkmark"
-  globals[glyphImport] = /[^/]+$/.exec(glyphImport)[0];
 });
 
 const moduleFormatToDirectory = {
@@ -152,7 +122,6 @@ const config = ['esm', 'umd'].flatMap(format => {
         'focus-trap-react',
         ...getLodashExternals(),
         ...allPackages,
-        ...directGlyphImports,
       ].includes(id) ||
       // We test if an import includes lodash to avoid having
       // to whitelist every nested lodash module individually
@@ -160,17 +129,7 @@ const config = ['esm', 'umd'].flatMap(format => {
       /^highlight\.js\//.test(id),
   };
 
-  return [
-    baseConfig,
-    ...getGeneratedFiles().map(input => ({
-      ...baseConfig,
-      input: `src/generated/${path.basename(input)}`,
-      output: {
-        ...baseConfig.output,
-        name: `${path.basename(input, path.extname(input))}.js`,
-      },
-    })),
-  ];
+  return [baseConfig];
 });
 
 export default config;
