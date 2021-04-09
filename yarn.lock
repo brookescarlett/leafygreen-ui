@@ -1794,14 +1794,6 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@leafygreen-ui/box@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@leafygreen-ui/box/-/box-3.0.3.tgz#cb634e2967df3daacb64ea8d102566134f108b0a"
-  integrity sha512-zLB5v6VWHJBenISwStOdlnzNkmyPqwGyoSBaakxLs9AsWV1YuW6Jicb9DuNAl9aZFKIlE/CPCWQHH4EBWvLITQ==
-  dependencies:
-    "@leafygreen-ui/lib" "^6.0.1"
-    lodash "^4.17.21"
-
 "@leafygreen-ui/emotion@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@leafygreen-ui/emotion/-/emotion-3.0.1.tgz#b380b79512459da7b94542f6d8a6860804cbab18"
@@ -1811,14 +1803,7 @@
     create-emotion-server "10.0.27"
     emotion "^10.0.7"
 
-"@leafygreen-ui/icon@^10.0.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@leafygreen-ui/icon/-/icon-10.2.0.tgz#a59cd3db357a451a779b1d5027da6ad3f678dba8"
-  integrity sha512-vFTL6PNx4Asg6+MmTXKYIde9IjRYgGl3ElhUAq0DHrgXKLdren6okI+Ly4rCE2T0SUSNyvjapwwjI4cX9/Skng==
-  dependencies:
-    "@leafygreen-ui/lib" "^6.3.0"
-
-"@leafygreen-ui/lib@^6.0.1", "@leafygreen-ui/lib@^6.1.0", "@leafygreen-ui/lib@^6.3.0":
+"@leafygreen-ui/lib@^6.1.0":
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/@leafygreen-ui/lib/-/lib-6.3.0.tgz#7276bf2a5e22dcb18c08bef5a3beb32b921b615c"
   integrity sha512-G1pdzkBAS8jGhHMzBD3dCJehPrtb8fT5B79FhQ3MlPKZ7UFdEr9kyHqBSYY9PqypFLyROmChkwc8s50IC2UPDA==
@@ -1828,30 +1813,10 @@
     polished "^2.3.0"
     prop-types "^15.0.0"
 
-"@leafygreen-ui/palette@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@leafygreen-ui/palette/-/palette-3.2.0.tgz#416d059a2dab93a50b6d4db9070c6f479ccccdc4"
-  integrity sha512-naxwFLzJORMyldvDiCF8WdT02E/sT7k7jQyDo5rhuTPOaTySxXCfMjllurv71j+YX+mD7IsgaxzMYweVJwZYdA==
-
-"@leafygreen-ui/ripple@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@leafygreen-ui/ripple/-/ripple-1.1.0.tgz#7d02a8826907c9bb6f66f5116b96175beed3d9c8"
-  integrity sha512-iTtbUuLiO5tkUYQTjn2uR4FgKNyn58+1mYspOhYpx/4amoDzkYAuu0ZYCCN1GUe86A+/r49wjDGPfKduY+favw==
-  dependencies:
-    "@leafygreen-ui/palette" "^3.2.0"
-    polished "^4.1.1"
-
 "@leafygreen-ui/testing-lib@*":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@leafygreen-ui/testing-lib/-/testing-lib-0.2.1.tgz#b6e417b9ce3675d678209cf69ca9cbefb0ade1b5"
   integrity sha512-vVKO/ozcVQ0I0FA2X+vN6Ac9PGPxBds1XUJ77ibQH2UEV2uUZlljP7EsYprcdl1dZxbV7jUEYee7pd0Dc3NECQ==
-
-"@leafygreen-ui/tokens@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@leafygreen-ui/tokens/-/tokens-0.5.0.tgz#85c9f7930571ea1c74b57213cecc918e0763e505"
-  integrity sha512-1rnFI1NSNtddMtRzwy4rS/4NF3rO7eK1dbw/+h+VAqY1OZHNJinV0R283QJajx2dMttm20mOpTN6v099kM0SxQ==
-  dependencies:
-    "@leafygreen-ui/lib" "^6.0.1"
 
 "@lerna/add@3.20.0":
   version "3.20.0"
@@ -11190,11 +11155,6 @@ lodash@^4.0.1, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.1
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
-lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
-
 longest@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-2.0.1.tgz#781e183296aa94f6d4d916dc335d0d17aefa23f8"
@@ -12918,13 +12878,6 @@ polished@^3.3.1, polished@^3.4.4, polished@^3.5.1:
   integrity sha512-b4OViUOihwV0icb9PHmWbR+vPqaSzSAEbgLskvb7ANPATVXGiYv/TQFHQo65S53WU9i5EQ1I03YDOJW7K0bmYg==
   dependencies:
     "@babel/runtime" "^7.9.2"
-
-polished@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-4.1.1.tgz#40442cc973348e466f2918cdf647531bb6c29bfb"
-  integrity sha512-4MZTrfPMPRLD7ac8b+2JZxei58zw6N1hFkdBDERif5Tlj19y3vPoPusrLG+mJIlPTGnUlKw3+yWz0BazvMx1vg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
 
 popper.js@^1.14.4, popper.js@^1.14.7:
   version "1.16.1"

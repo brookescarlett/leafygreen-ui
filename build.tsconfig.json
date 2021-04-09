@@ -3,7 +3,7 @@
   "include": [],
   "references": [
     {
-      "path": "./packages/button"
+      "path": "./packages/palette"
     }
   ]
 }
