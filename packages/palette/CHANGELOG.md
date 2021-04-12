@@ -1,5 +1,11 @@
 # @leafygreen-ui/palette
 
+## 0.1.0
+
+### Minor Changes
+
+- 3cd530a6: fdsa
+
 ## 3.3.0
 
 ### Minor Changes
